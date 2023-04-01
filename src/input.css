@@ -5,3 +5,14 @@
 .cfont {
   font-family: Orbitron;
 }
+
+.fixImg {
+  height: 38rem;
+  width: 50%;
+}
+
+@media (max-width: 640px) {
+  .fixImg {
+    height: 20rem;
+  }
+}
