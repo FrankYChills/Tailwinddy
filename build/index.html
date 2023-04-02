@@ -12,6 +12,7 @@
     />
     <title>Ben 10</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/main.js" defer></script>
   </head>
   <body class="cfont min-h-screen bg-slate-50 dark:bg-black dark:text-white">
     <header class="sticky top-0 z-10 bg-teal-700 text-white">
@@ -21,17 +22,43 @@
         </h1>
         <div>
           <button
-            id="mobile-open-button"
-            class="text-3xl focus:outline-none sm:hidden"
+            id="hamburger-button"
+            class="relative h-8 w-8 cursor-pointer text-3xl md:hidden"
           >
-            &#9776;
+            <!-- &#9776; -->
           </button>
-          <nav class="hidden space-x-8 text-xl sm:block" aria-label="main">
+          <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
             <a href="#aliens" class="hover:opacity-90">The Aliens</a>
             <a href="#series" class="hover:opacity-90">Series</a>
             <a href="#contact" class="hover:opacity-90">Purchase</a>
           </nav>
         </div>
+      </section>
+      <section
+        id="mobile-menu"
+        class="top-68 absolute hidden w-full origin-top animate-open-menu flex-col justify-center bg-black text-5xl"
+      >
+        <!-- <button class="self-end px-6 text-8xl">&times;</button> -->
+        <nav
+          class="flex min-h-screen flex-col items-center py-8"
+          aria-label="mobile"
+        >
+          <a href="#hero" class="w-full py-6 text-center hover:opacity-90"
+            >Home</a
+          >
+          <a href="#aliens" class="w-full py-6 text-center hover:opacity-90"
+            >The Aliens</a
+          >
+          <a href="#series" class="w-full py-6 text-center hover:opacity-90"
+            >Series</a
+          >
+          <a href="#contact" class="w-full py-6 text-center hover:opacity-90"
+            >Purchase</a
+          >
+          <a href="#footer" class="w-full py-6 text-center hover:opacity-90"
+            >Legal</a
+          >
+        </nav>
       </section>
     </header>
     <main class="mx-auto max-w-4xl">
