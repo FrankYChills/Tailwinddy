@@ -3,6 +3,13 @@ module.exports = {
   content: ["./build/*.html", "./build/js/*.js"],
   theme: {
     extend: {
+      colors: {
+        papayawhip: {
+          light: "#fef4e4",
+          DEFAULT: "#ffefd5",
+          dark: "#fee5bc",
+        },
+      },
       keyframes: {
         "open-menu": {
           "0%": { transform: "scaleY(0)" },
